@@ -1,0 +1,14 @@
+Launch the app from this directory!
+it will look for config files in ../data
+
+TODO : code optimisation to detect the face
+
+FILES :
+
+qt-facetrainer is a program that recognize faces after training. I'm currently trying to port it to the RPi
+
+qt-facetrainer-cam     : Compiled version to display camera
+qt-facetrainer-video   : Compiled version to display video
+qt-facetrainer-x64     : Compiled version for desktop tests
+
+Nota : Those programs work with OpenCV 2.4.9

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>faceTrainerAdvSettings</class>
+ <widget class="QDialog" name="faceTrainerAdvSettings">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>405</width>
+    <height>409</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>405</width>
+    <height>409</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>405</width>
+    <height>409</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Advanced Settings</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../../graphics.qrc">
+    <normaloff>:/data/ui/images/pfa-logo.png</normaloff>:/data/ui/images/pfa-logo.png</iconset>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>276</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Thresholds</string>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>76</x>
+     <y>296</y>
+     <width>94</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Low Security</string>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>296</y>
+     <width>93</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>High Security</string>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="webcamPreview">
+   <property name="geometry">
+    <rect>
+     <x>49</x>
+     <y>26</y>
+     <width>320</width>
+     <height>240</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>320</width>
+     <height>240</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="sceneRect">
+    <rectf>
+     <x>0.000000000000000</x>
+     <y>0.000000000000000</y>
+     <width>320.000000000000000</width>
+     <height>240.000000000000000</height>
+    </rectf>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_tr">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>252</x>
+     <y>343</y>
+     <width>147</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Test Recognition</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="result">
+   <property name="geometry">
+    <rect>
+     <x>277</x>
+     <y>384</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Yes/No</string>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="result_2">
+   <property name="geometry">
+    <rect>
+     <x>106</x>
+     <y>384</y>
+     <width>156</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Test Recognition Result</string>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_number_4">
+   <property name="geometry">
+    <rect>
+     <x>29</x>
+     <y>302</y>
+     <width>29</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Serif</family>
+     <pointsize>22</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(87, 141, 29);
+border-width:5px;
+border-radius:9px;
+color: rgb(255,255,255);
+font: 22pt &quot;Serif&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_number_5">
+   <property name="geometry">
+    <rect>
+     <x>29</x>
+     <y>342</y>
+     <width>29</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Serif</family>
+     <pointsize>22</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(87, 141, 29);
+border-width:5px;
+border-radius:9px;
+color: rgb(255,255,255);
+font: 22pt &quot;Serif&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_save">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>343</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_restore">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>72</x>
+     <y>342</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Defaults</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="percentage">
+   <property name="geometry">
+    <rect>
+     <x>102</x>
+     <y>312</y>
+     <width>218</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string> QSlider::groove:horizontal {
+	 
+     border: 1px solid #999999;
+     height: 12px; /* the groove expands to the size of the slider by default. by giving it a height, it has a fixed size */
+     background: qlineargradient(spread:pad, x1:0.222, y1:0.591318, x2:0.928, y2:0.585, stop:0 rgba(255, 10, 0, 255), stop:0.494444 rgba(255, 231, 0, 255), stop:0.938889 rgba(122, 255, 0, 255));
+     margin: 2px 0;
+ }
+
+ QSlider::handle:horizontal {
+     background:  qlineargradient(spread:pad, x1:0.389, y1:0, x2:0.422, y2:0.698682, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(94, 94, 94, 255));
+     border: 1px solid #333333;
+     width: 18px;
+     margin: -2px 0; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
+     border-radius: 3px;
+ }
+
+</string>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>90</number>
+   </property>
+   <property name="value">
+    <number>76</number>
+   </property>
+   <property name="tracking">
+    <bool>true</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="invertedAppearance">
+    <bool>false</bool>
+   </property>
+   <property name="invertedControls">
+    <bool>false</bool>
+   </property>
+   <property name="tickPosition">
+    <enum>QSlider::TicksAbove</enum>
+   </property>
+   <property name="tickInterval">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>183</x>
+     <y>296</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Medium</string>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../graphics.qrc"/>
+ </resources>
+ <connections/>
+</ui>
