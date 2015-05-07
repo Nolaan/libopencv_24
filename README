@@ -3,6 +3,7 @@ Compiled OpenCv 2.4 Librairies for Raspberry Pi
 Tip : Use tags to choose prefered version ( distribution started at v2.4.9 )
 
 I would suggest to put those files in /usr/local/lib to avoid your package manager erasing them.
+(sudo cp -P * libopencv_* /usr/local/lib/)
 
 Doing so you'll have to put this line in /etc/ld.so.conf.d/opencv.conf (create it!)
 
