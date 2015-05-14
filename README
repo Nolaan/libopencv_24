@@ -1,5 +1,7 @@
 Compiled OpenCv 2.4 Librairies for Raspberry Pi
 
+QuickFix : Download the LATEST .deb file here ==>> https://github.com/Nolaan/libopencv_24/releases
+
 Tip : Use tags to choose prefered version ( distribution started at v2.4.9 )
 
 I would suggest to put those files in /usr/local/lib to avoid your package manager erasing them.
